@@ -54,6 +54,9 @@ class MensaSession(requests.Session):
         }
 
         response = requests.post(self.quicklike_url, cookies=cookies, data=data)
+        if response.text == '':
+            raise ValueError('This item cannot be liked.')
+
         return int(response.text)
 
     def load_speiseplan(self, mensa_id: int, date: Optional[str] = None) -> list[Meal]:
