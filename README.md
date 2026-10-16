@@ -32,7 +32,7 @@ mensapy/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/mensapy.git
+   git clone https://github.com/DwarflinDeveloping/mensapy.git
    cd mensapy
    ```
 
